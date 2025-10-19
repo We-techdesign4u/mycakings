@@ -41,9 +41,9 @@ const HeroBanner = (props) => {
   };
 
   return (
-    <div className=" bg-[url('./images/HeroBannerBg.jpg')] bg-no-repeat bg-cover bg-fixed">
-      <div className="pt-30 pb-[260px] px-70 flex relative bg-white/30 backdrop-blur-sm">
-        <div className="w-150 content-center">
+    <section className=" bg-[url('./images/HeroBannerBg.jpg')] bg-no-repeat bg-cover bg-fixed">
+      <div className="pt-30 flex-col sm:flex-row pb-10 sm:pb-[260px] sm:px-70 flex relative bg-white/30 backdrop-blur-sm">
+        <div className="sm:w-150 w-full content-center px-5 sm:px-0 ">
           <AnimatePresence mode="wait">
             <motion.div
               key={bannaDetails}
@@ -51,17 +51,18 @@ const HeroBanner = (props) => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 0.6 }}
+              className=" w-full sm:items-start items-center flex flex-col"
             >
-              <p className="text-secondary1 font-Lato">
+              <p className="text-secondary1 font-Lato text-center sm:text-left">
                 {data[bannaDetails].secondaryHeadline}
               </p>
-              <p className="text-[51px] text-secondary3 font-Lato font-medium">
+              <p className="text-center pt-5 sm:pt-0 sm:text-left sm:text-[51px] text-[40px] text-secondary3 font-Lato font-medium">
                 {data[bannaDetails].primaryHeadline1}
               </p>
-              <p className="text-[77px] text-secondary3 leading-15 font-Lato font-bold">
+              <p className="text-center sm:text-left text-[77px] text-secondary3 leading-15 font-Lato font-bold">
                 {data[bannaDetails].primaryHeadline2}
               </p>
-              <p className="text-secondary1 text-[20px] mt-15 w-120 font-Lato">
+              <p className="text-center sm:text-left text-secondary1 text-[20px] mt-15 sm:w-120 font-Lato">
                 {data[bannaDetails].supportingSubtext}
               </p>
             </motion.div>
@@ -73,7 +74,7 @@ const HeroBanner = (props) => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="space-x-7 pt-15"
+              className="space-x-7 pt-15 sm:block justify-center items-center flex"
             >
               <Link href={"/Gallery"}>
                 <Button
@@ -90,20 +91,27 @@ const HeroBanner = (props) => {
             </motion.div>
           </AnimatePresence>
         </div>
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={bannaDetails}
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -30 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="absolute h-[600px] top-0 right-0"
-          >
-            <img width={700} src={urlFor(data[bannaDetails].image)} alt="" />
-          </motion.div>
-        </AnimatePresence>
+        <div>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={bannaDetails}
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -30 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="absolute -z-2 h-[600px] top-0 right-0"
+            >
+              <img
+                width={700}
+                className=" opacity-20 sm:opacity-100"
+                src={urlFor(data[bannaDetails].image)}
+                alt=""
+              />
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

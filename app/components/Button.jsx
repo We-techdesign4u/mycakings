@@ -5,7 +5,7 @@ const Button = ({ title, handlePress, background }) => {
     <button
       type="button"
       onClick={handlePress}
-      className={`text-[20px] hover:opacity-90 rounded-md h-[65px] ${background} w-[200px] font-Lato font-bold text-white`}
+      className={`text-[20px] hover:opacity-90 rounded-md h-[65px] ${background} sm:w-[200px] w-[150px] font-Lato font-bold text-white`}
     >
       {title}
     </button>

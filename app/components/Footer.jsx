@@ -58,9 +58,9 @@ const Footer = () => {
   };
 
   return (
-    <div
+    <sectoin
       id="order-section"
-      className="flex flex-col py-20 bg-linear-180 from-amber-200 px-70 to-amber-100"
+      className="px-5 flex flex-col py-20 bg-linear-180 from-amber-200 sm:px-70 to-amber-100"
     >
       <div className="items-center flex flex-col">
         <p className="text-[30px] font-Lato text-secondary3">It's Easy</p>
@@ -68,7 +68,7 @@ const Footer = () => {
           Make An Order
         </p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex flex-col sm:flex-row justify-center">
         <div className="mt-15">
           <div className=" space-y-6 text-secondary2">
             <div className="flex space-x-4 items-center">
@@ -104,17 +104,17 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="text-secondary3 ml-15 mt-10 ">
-            <p className="font-Lato font-bold text-[25px] ">MyCakings</p>
+          <div className="text-secondary3 text-center sm:text-left sm:ml-15 mt-10 ">
+            <p className="font-Lato font-bold text-[25px] ">MyCakings Store</p>
             <p className="mt-3">
-              55th Road <br /> Lagos Nig
+              55th Ave, Odejimi Road <br /> Lagos Nig
             </p>
 
             <p className="mt-4">234809457864</p>
           </div>
         </div>
-        <div className=" ml-20 mt-15 flex">
-          <form className=" space-y-3">
+        <div className=" sm:ml-20 mt-15 flex">
+          <form className="  space-y-3">
             <FormFieldText
               name={"name"}
               title={"Name"}
@@ -146,7 +146,7 @@ const Footer = () => {
               <div className="flex justify-between">
                 <select
                   name="order"
-                  className="bg-white w-[350px] h-[40px] rounded-sm pl-2"
+                  className="bg-white sm:w-[350px] w-[290px] h-[40px] rounded-sm pl-2"
                   value={form.order}
                   placeholder="Choose"
                   onChange={handleChange}
@@ -176,7 +176,7 @@ const Footer = () => {
               </p>
               <select
                 name="payment"
-                className="bg-white w-[400px] h-[40px] rounded-sm pl-2"
+                className="bg-white w-[325px] sm:w-[400px] h-[40px] rounded-sm pl-2"
                 value={form.payment}
                 placeholder="Choose"
                 onChange={handleChange}
@@ -222,7 +222,7 @@ const Footer = () => {
           </form>
         </div>
       </div>
-    </div>
+    </sectoin>
   );
 };
 
