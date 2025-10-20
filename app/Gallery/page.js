@@ -16,7 +16,7 @@ export default async function Gallery() {
 
   return (
     <div className="h-full relative">
-      <div className=" w-full fixed  z-1 pt-20  sm:pt-[130px] pb-[40px] bg-amber-200 px-5 sm:px-[120px] block sm:items-center ">
+      <div className=" w-full fixed  z-1 pt-15  sm:pt-[130px] pb-[20px] bg-amber-200 px-5 sm:px-[120px] block sm:items-center ">
         <div className="sm:items-center sm:flex-row flex-col flex pb-[10px]">
           <div className="flex grow-1">
             <p>Products: {gallery.length}</p>
@@ -36,10 +36,10 @@ export default async function Gallery() {
           </form>
         </div>
       </div>
-      <span className=" flex h-[230px] w-full"></span>
+      <span className=" flex h-[180px] w-full"></span>
 
       <div className="bg-[url('./images/howtoorderBg2.jpg')] bg-no-repeat bg-cover bg-fixed">
-        <div className=" sm:px-[120px] px-5 flex flex-col items-center sm:pt-[50px] pt-[70px] sm:grid sm:grid-cols-4 grid-cols-1 sm:gap-30 gap-10 bg-white/30 backdrop-blur-sm">
+        <div className=" sm:px-[120px] px-5 flex flex-col items-center sm:pt-[90px] pt-[70px] sm:grid sm:grid-cols-4 grid-cols-1 sm:gap-30 gap-10 bg-white/30 backdrop-blur-sm">
           {gallery.map((product, index) => (
             <div
               className="transition duration-700 ease-in-out hover:shadow-md block bg-white w-[300px] p-[10px] border-1 rounded-[10px] border-gray-400"

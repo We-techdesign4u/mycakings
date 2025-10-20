@@ -41,8 +41,8 @@ const HeroBanner = (props) => {
   };
 
   return (
-    <section className=" bg-[url('./images/HeroBannerBg.jpg')] bg-no-repeat bg-cover bg-fixed">
-      <div className="pt-30 flex-col sm:flex-row pb-10 sm:pb-[260px] sm:px-70 flex relative bg-white/30 backdrop-blur-sm">
+    <section className=" max-w-screen max-h-screen overflow-hidden bg-[url('./images/HeroBannerBg.jpg')] bg-no-repeat bg-cover bg-fixed">
+      <div className=" pt-30 flex-col sm:flex-row pb-10 sm:pb-[260px] sm:px-70 flex relative bg-white/30 backdrop-blur-sm">
         <div className="sm:w-150 w-full content-center px-5 sm:px-0 ">
           <AnimatePresence mode="wait">
             <motion.div
@@ -91,7 +91,7 @@ const HeroBanner = (props) => {
             </motion.div>
           </AnimatePresence>
         </div>
-        <div>
+        <div className="">
           <AnimatePresence mode="wait">
             <motion.div
               key={bannaDetails}
@@ -99,7 +99,7 @@ const HeroBanner = (props) => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -30 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="absolute -z-2 h-[600px] top-0 right-0"
+              className=" absolute -z-2 h-[600px] top-0 right-0"
             >
               <img
                 width={700}

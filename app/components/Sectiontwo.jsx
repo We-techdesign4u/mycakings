@@ -28,7 +28,7 @@ const Sectiontwo = (props) => {
   }, [nextSlideIndex]);
 
   return (
-    <section className="w-full sm:bg-[url('./images/howtoorderBg.jpg')] bg-no-repeat bg-cover bg-fixed">
+    <section className=" max-w-screen overflow-x-hidden sm:bg-[url('./images/howtoorderBg.jpg')] bg-no-repeat bg-cover bg-fixed">
       <div className="bg-white/30 backdrop-blur-sm sm:py-[70px] py-10 justify-center items-center flex flex-col sm:px-70 px-5">
         <p className="text-[30px] font-Lato text-secondary3">The Process</p>
         <p className="text-[50px] font-bold font-Lato text-secondary2">

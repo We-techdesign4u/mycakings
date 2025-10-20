@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const Navbar = () => {
   const [isShown, setisShown] = useState(false);
   return (
-    <div className="block w-full fixed z-10">
+    <div className="block w-screen sm:w-full fixed z-10">
       <div className=" px-5 sm:px-0 flex-row-reverse flex sm:flex-row justify-between sm:h-[70px] w-full items-center relative sm:mr-[150px] backdrop-blur-md">
         <div className="logo sm:pl-[130px] sm:w-[250px] w-[150px] pl-0">
           <Link href="/">
