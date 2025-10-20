@@ -27,11 +27,11 @@ const CustomerReview = (props) => {
                   src={urlFor(review.productImage)}
                 />
               </div>
-              <div className="flex-col flex">
+              <div className="block max-w-8/10">
                 <p className="text-[25px] font-Lato font-bold text-secondary3">
                   {review.customerName}
                 </p>
-                <p className="sm:w-[200px]  w-80 font-Lato  text-[14px]">
+                <p className="sm:w-[200px] font-Lato  text-[14px]">
                   {review.customerReview[0].children[0].text}
                 </p>
               </div>

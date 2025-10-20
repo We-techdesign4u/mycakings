@@ -28,7 +28,7 @@ export default function ContactUs() {
           </p>
           <div className="">
             <div className="flex items-center mb-[20px]">
-              <div className="h-[25px] w-[25px] rounded-[50px] mr-[10px] flex items-center justify-center">
+              <div className="h-[25px] w-[25px] mr-[10px] flex items-center justify-center">
                 <AiFillHome className="text-secondary3" />
               </div>
               <div className="m-0 font-lato text-[15px]">
@@ -41,7 +41,7 @@ export default function ContactUs() {
               </div>
             </div>
             <div className="flex items-center mb-[20px]">
-              <div className="h-[25px] w-[25px] rounded-[50px] mr-[10px] flex items-center justify-center">
+              <div className="h-[25px] w-[25px]  mr-[10px] flex items-center justify-center">
                 <AiFillPhone className=" text-secondary3" />
               </div>
               <div className="m-0 font-lato text-[11px] ">
@@ -54,7 +54,7 @@ export default function ContactUs() {
               </div>
             </div>
             <div className="flex items-center mb-[20px]">
-              <div className="h-[25px] w-[25px] border-2 border-white rounded-[50px] mr-[10px] flex items-center justify-center">
+              <div className="h-[25px] w-[25px] mr-[10px] flex items-center justify-center">
                 <AiFillMail className="text-secondary3" />
               </div>
               <div className="">
